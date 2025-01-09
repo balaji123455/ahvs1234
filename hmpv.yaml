@@ -1,0 +1,54 @@
+# Virus prevention system configuration for HMPV
+virus_prevention:
+  virus_name: "Human Metapneumovirus (HMPV)"
+  prevention_measures:
+    hygiene:
+      - wash_hands_frequency: "every 1 hour"
+      - use_hand_sanitizer: true
+      - mask_usage: "recommended in crowded places"
+    vaccination:
+      available_vaccine: false
+      vaccination_recommendation: false
+    environment:
+      ventilation:
+        minimum_air_exchange_rate: "6 ACH"  # Air changes per hour
+        air_purification: true
+    contact_prevention:
+      avoid_touching_face: true
+      social_distancing: "recommended during outbreaks"
+    symptoms_monitoring:
+      symptom_check_frequency: "daily"
+      fever_threshold: "100.4F"
+      cough_threshold: "persistent for more than 24 hours"
+  personnel_training:
+    training_required: true
+    training_modules:
+      - hygiene_and_sanitation
+      - PPE_usage
+      - virus_symptoms_identification
+  quarantine_and_isolation:
+    isolation_measures:
+      isolation_rooms: true
+      quarantine_time: "7 days after symptoms onset"
+      quarantine_guidelines:
+        - "Follow local healthcare authority guidance"
+    contact_tracing: true
+  communication_plan:
+    public_communication:
+      - method: "email"
+      - frequency: "weekly"
+    internal_communication:
+      - method: "dashboard_alerts"
+      - frequency: "real-time"
+  monitoring:
+    system_type: "health_monitoring_app"
+    data_storage: "encrypted"
+    user_access_level:
+      - role: "admin"
+        permissions: 
+          - view_all_data
+          - edit_prevention_protocol
+      - role: "staff"
+        permissions: 
+          - view_only
+          - update_symptoms_status
